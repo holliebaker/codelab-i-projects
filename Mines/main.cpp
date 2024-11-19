@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 using namespace std;
 
 /**
@@ -8,6 +9,9 @@ using namespace std;
 
 int main()
 {
+    // seed for random numbers based on current time
+    srand(time(NULL));
+
     // use a 2d array for the grid
     const int ROWS = 5;
     const int COLS = 7;
